@@ -9,14 +9,13 @@ import pandas as pd
 from flask import Flask
 # pip install flask
 from flask import render_template
-
 # vi behöver få in geojson här
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template('/index.html')
 
 @app.route("/data") # data representation
 def get_data():
